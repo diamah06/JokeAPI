@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5393DF3129D5B8D60031A1FF /* ChuckNorrisJoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393DF3029D5B8D60031A1FF /* ChuckNorrisJoke.swift */; };
+		5393DF3729D62ED40031A1FF /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 5393DF3629D62ED40031A1FF /* NetworkService */; };
 		53BC8E9429D5B36E000B9FB4 /* JokeAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC8E9329D5B36E000B9FB4 /* JokeAPIApp.swift */; };
-		53BC8E9629D5B36E000B9FB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC8E9529D5B36E000B9FB4 /* ContentView.swift */; };
+		53BC8E9629D5B36E000B9FB4 /* DevTechieGenericNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC8E9529D5B36E000B9FB4 /* DevTechieGenericNetworkManager.swift */; };
 		53BC8E9829D5B36F000B9FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53BC8E9729D5B36F000B9FB4 /* Assets.xcassets */; };
 		53BC8E9B29D5B36F000B9FB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53BC8E9A29D5B36F000B9FB4 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5393DF3029D5B8D60031A1FF /* ChuckNorrisJoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisJoke.swift; sourceTree = "<group>"; };
 		53BC8E9029D5B36E000B9FB4 /* JokeAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53BC8E9329D5B36E000B9FB4 /* JokeAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeAPIApp.swift; sourceTree = "<group>"; };
-		53BC8E9529D5B36E000B9FB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		53BC8E9529D5B36E000B9FB4 /* DevTechieGenericNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTechieGenericNetworkManager.swift; sourceTree = "<group>"; };
 		53BC8E9729D5B36F000B9FB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53BC8E9A29D5B36F000B9FB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		53BC8EA329D5B5CE000B9FB4 /* JokeAPI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = JokeAPI.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +30,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5393DF3729D62ED40031A1FF /* NetworkService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5393DF2F29D5B8740031A1FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5393DF3029D5B8D60031A1FF /* ChuckNorrisJoke.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5393DF3229D5B91F0031A1FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53BC8E9529D5B36E000B9FB4 /* DevTechieGenericNetworkManager.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		53BC8E8729D5B36E000B9FB4 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				53BC8E9329D5B36E000B9FB4 /* JokeAPIApp.swift */,
-				53BC8E9529D5B36E000B9FB4 /* ContentView.swift */,
+				5393DF3229D5B91F0031A1FF /* View */,
+				5393DF2F29D5B8740031A1FF /* Model */,
+				53BC8EA329D5B5CE000B9FB4 /* JokeAPI.xctestplan */,
 				53BC8E9729D5B36F000B9FB4 /* Assets.xcassets */,
 				53BC8E9929D5B36F000B9FB4 /* Preview Content */,
 			);
@@ -83,6 +106,9 @@
 			dependencies = (
 			);
 			name = JokeAPI;
+			packageProductDependencies = (
+				5393DF3629D62ED40031A1FF /* NetworkService */,
+			);
 			productName = JokeAPI;
 			productReference = 53BC8E9029D5B36E000B9FB4 /* JokeAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +137,9 @@
 				Base,
 			);
 			mainGroup = 53BC8E8729D5B36E000B9FB4;
+			packageReferences = (
+				5393DF3529D62ED40031A1FF /* XCRemoteSwiftPackageReference "NetworkService" */,
+			);
 			productRefGroup = 53BC8E9129D5B36E000B9FB4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +166,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53BC8E9629D5B36E000B9FB4 /* ContentView.swift in Sources */,
+				5393DF3129D5B8D60031A1FF /* ChuckNorrisJoke.swift in Sources */,
+				53BC8E9629D5B36E000B9FB4 /* DevTechieGenericNetworkManager.swift in Sources */,
 				53BC8E9429D5B36E000B9FB4 /* JokeAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5393DF3529D62ED40031A1FF /* XCRemoteSwiftPackageReference "NetworkService" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/diamah06/NetworkService.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5393DF3629D62ED40031A1FF /* NetworkService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5393DF3529D62ED40031A1FF /* XCRemoteSwiftPackageReference "NetworkService" */;
+			productName = NetworkService;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53BC8E8829D5B36E000B9FB4 /* Project object */;
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct JokeAPIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DevTechieGenericNetworkManager()
         }
     }
 }

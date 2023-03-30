@@ -1,0 +1,23 @@
+{
+  "configurations" : [
+    {
+      "id" : "6E920664-331E-4B0C-9F67-F8BD1F48D010",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:JokeAPI.xcodeproj",
+      "identifier" : "53BC8E8F29D5B36E000B9FB4",
+      "name" : "JokeAPI"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
